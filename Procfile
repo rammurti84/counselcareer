@@ -1,3 +1,3 @@
 
 
-web: gunicorn templates.wsgi --log-file -
+web: gunicorn counselcareer.wsgi --log-file -

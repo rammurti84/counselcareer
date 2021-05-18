@@ -1,0 +1,685 @@
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="PONIGYM Template">
+    <meta name="keywords" content="PONIGYM, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Career guidance</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href= "{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href= "{% static 'css/font-awesome.min.css' %}"  type="text/css">
+    <link rel="stylesheet" href= "{% static 'css/themify-icons.css' %}"  type="text/css">
+    <link rel="stylesheet" href= "{% static 'css/owl.carousel.min.css' %}"  type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}"  type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}"  type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"  type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src= "{% static 'img/careerguidance.jpg'%}" alt="" width="150" height="100">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <nav class="mainmenu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="./index.html">
+                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="{% url 'schedule' %}">Schedule</a></li>
+                        <li><a href="{% url 'gallery' %}">Portfolio</a></li>
+                           <li><a href="{% url 'blog' %}">Blog</a>
+                            <ul class="dropdown">
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url 'contact' %}">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-right search-switch">
+                    <i class="ti-search"></i>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero-section">
+        <div class="hero-items owl-carousel">
+            <div class="single-hero-item set-bg" data-setbg ="{% static 'img/slider.jpg'%}" >
+                <div class="container">
+                    <div class="hero-text">
+                        <h4></h4>
+                        <h1>IF U CAN DREAM IT,<span>YOU CAN DO IT</span></h1>
+                        <a href="#" class="primary-btn">Join Us Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="single-hero-item set-bg" data-setbg="{% static 'img/slider1.jpg'%}">
+                <div class="container">
+                    <div class="hero-text">
+                        <h4></h4>
+                        <h1>IT'S NOT WHAT YOU ACHIEVE <span>IT'S WHAT YOU OVERCOME</span></h1>
+                        <a href="#" class="primary-btn">Join Us Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="single-hero-item set-bg" data-setbg="{% static 'img/slider2.jpg'%}">
+                <div class="container">
+                    <div class="hero-text">
+                        <h4>Elite Personal Training Services</h4>
+                        <h1>Make it <span>Shape</span></h1>
+                        <a href="#" class="primary-btn">Join Us Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <h2>For Childrens</h2>
+                        <p>Discover your perfect stream and subject combinations through a comprehensive assesments of your strengths and explore the right career opportunity aligned to your stream choice.</p>
+                    </div>
+                    <div class="services-items">
+                        <div class="single-service-item">
+                            <img src="{% static 'img/icon-1.png'%}" alt="">
+                            <h5>College Students</h5>
+                           
+                            <p>Selection & Planning<br/>Discover your Perfect Career based on your Unique strengths & abilities, and get expert Career Counselling on your targeted career option to plan your course and college.
+                            </p>
+                        </div>
+                        <div class="single-service-item color-1">
+                            <img src="{% static 'img/icon-2.png'%}"  alt="">
+                            <h5>Career Activities</h5>
+                            <p>Best Match for suitablity<br/>Discover your Perfect Career based on your Unique strengths & abilities, and get expert Career Counselling on your targeted career option to plan your course and college.
+                            </p>
+                        </div>
+                        <div class="single-service-item color-2">
+                            <img src="{% static 'img/icon-3.png'%}"  alt="">
+                            <h5>Psychometric Testing and Employment</h5>
+                            <p>Best Match for suitablity<br/>Discover your Perfect Career based on your Unique strengths & abilities, and get expert Career Counselling on your targeted career option to plan your course and college.
+                            </p>
+                        </div>
+                        <div class="single-service-item color-3">
+                            <img src="{% static 'img/trainer/icon-4.png'%}"  alt="">
+                            <h5>Career Guidance</h5>
+                            <p>Individuals to help them acquire the knowledge, information, skills, and experience necessary to identify career options. Results in their social, financial and emotional well-being throughout
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="service-video set-bg" data-setbg="">
+                        <div class="play-btn">
+                            <iframe width="420" height="315"
+                           src="https://youtube.com/embed/12ass4FSCcg">
+                               </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Cta Section Begin -->
+    <section class="cta-section set-bg spad" data-setbg="{% static 'img/2007.i605.009..online education infographics-01.jpg'%}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>                                                            </h2>
+                    <p>                                                                                     .</p>
+                    <a href="#" class="primary-btn">Join With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cta Section End -->
+
+    <!-- Class Section Begin-->
+    <section class="class-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="section-title">
+                                <h2>Failure is the key to Sucess</h2>
+                                <p>“Choose a job you love, and you will never have to work a day in your life."</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="#" class="primary-btn">View All Schedule</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="class-item">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade-in active" id="class-1" role="tabpanel">
+                                        <div class="single-class-item">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <img src="{% static 'img/26958.jpg'%}" alt="">
+                                                </div>
+                                                <div class="col-lg-5 offset-lg-1">
+                                                    <div class="class-text">
+                                                        <h3>Professional development</h3>
+                                                        
+        <p>Professional development is the process of improving skills and gaining knowledge that will help you continue to find success in your role and even develop the marketable skills you may need to get a promotion or change positions. Professional development should be something you actively do throughout your career so you can stay up to date in your field. Professional development can include training courses, degree programs, certifications or even connecting with a mentor who can help guide you in your career.</p>
+            <br>
+            <br>
+            </p>
+                                                        <a href="#" class="schedule-btn">View Schedule <i
+                                                                class="fa fa-long-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="class-2" role="tabpanel">
+                                        <div class="single-class-item">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <img src="{% static 'img/1000.jpg'%}" alt="">
+                                                </div>
+                                                <div class="col-lg-5 offset-lg-1">
+                                                    <div class="class-text">
+                                                        <h3>Critical Thinking</h3>
+                                                        <p>Critical thinking involves finding solutions to complicated problems. To think critically, you must understand the issue, consider all perspectives from those involved and arrive at a conclusion on the best way to move forward..</p>
+                                                        <a href="#" class="schedule-btn">View Schedule <i
+                                                                class="fa fa-long-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="class-3" role="tabpanel">
+                                        <div class="single-class-item">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <img src="{% static 'img/500_F_163206213_.jpg'%}" alt="">
+                                                </div>
+                                                <div class="col-lg-5 offset-lg-1">
+                                                    <div class="class-text">
+                                                        <h3>Persuasive storytelling</h3>
+                                                        <p>If you are in a sales role or any other position where you must get someone else to perform an action, then persuasive storytelling is a viable skill. It involves being able to naturally connect with your audience so they feel a connection to you and your purpose. Persuasive storytelling means you are able to show empathy for others and communicate your position in a way that allows your audience to envision themselves in the situation you're presenting.</p>
+                                                        <a href="#" class="schedule-btn">View Schedule <i
+                                                                class="fa fa-long-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="class-4" role="tabpanel">
+                                        <div class="single-class-item">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <img src="{% static 'img/19197902.jpg'%}" alt="">
+                                                </div>
+                                                <div class="col-lg-5 offset-lg-1">
+                                                    <div class="class-text">
+                                                        <h3>Communication skills</h3>
+                                                        <p>Professional success depends on how well you're able to communicate with others in the workplace. As part of your professional development, explore ways to improve your communication with peers, managers, vendors and customers. You can understand more how to adapt your conversation based on someone's attitude and how to communicate using various methods, like in-person, through email or on the phone. Communication skills also involve knowing about body language, both how to interpret it and how to be mindful of your own.</p>
+                                                        <a href="#" class="schedule-btn">View Schedule <i
+                                                                class="fa fa-long-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="class-5" role="tabpanel">
+                                        <div class="single-class-item">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <img src="{% static 'img/4896715.jpg'%}" alt="">
+                                                </div>
+                                                <div class="col-lg-5 offset-lg-1">
+                                                    <div class="class-text">
+                                                        <h3>Delivering constructive feedback</h3>
+                                                        <p>Being able to deliver and receive constructive feedback is a crucial part of any employee's job, no matter where they are in a company's hierarchy. Managers may provide feedback on your performance, or you may have to deliver constructive criticism to a coworker during a peer review. As part of your professional development, consider learning more about how you can give clear feedback respectfully and how you can graciously listen to others as they provide feedback to you.</p>
+                                                        <a href="#" class="schedule-btn">View Schedule <i
+                                                                class="fa fa-long-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="class-6" role="tabpanel">
+                                        <div class="single-class-item">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <img src="{% static 'img/7084.jpg'%}" alt="">
+                                                </div>
+                                                <div class="col-lg-5 offset-lg-1">
+                                                    <div class="class-text">
+                                                        <h3>Setting goals</h3>
+                                                        <p>One of the most important things you can do for your professional development is set goals for yourself. Your goals give you a path and a purpose in your career. Your department may have goals for the team and your company can have overarching goals that drive business decisions and strategy. Goals should be specific, measurable, attainable, relevant and time-based to give you the most chance of success..</p>
+                                                        <a href="#" class="schedule-btn">View Schedule <i
+                                                                class="fa fa-long-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="class-author">
+                                <ul class="nav" role="tablist">
+                                    <li>
+                                        <a data-toggle="tab" class="active" href="#class-1" role="tab">
+                                            <div class="author-text">
+                                                <img src="img/class/author-1.jpg" alt="">
+                                                <h5>Professional Development </h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#class-2" role="tab">
+                                            <div class="author-text">
+                                                <img src="img/class/author-2.jpg" alt="">
+                                                <h5>Critical Thinking</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#class-3" role="tab">
+                                            <div class="author-text">
+                                                <img src="img/class/author-3.jpg" alt="">
+                                                <h5>Persuasive storytelling</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#class-4" role="tab">
+                                            <div class="author-text">
+                                                <img src="img/class/author-4.jpg" alt="">
+                                                <h5>Communication skills</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#class-5" role="tab">
+                                            <div class="author-text">
+                                                <img src="img/class/author-5.jpg" alt="">
+                                                <h5>Delivering constructive feedback</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#class-6" role="tab">
+                                            <div class="author-text">
+                                                <img src="img/class/author-6.jpg" alt="">
+                                                <h5>Setting Goals</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Class Section End -->
+
+    <!-- Trainer Table Schedule Section Begin -->
+    
+                        <section class="ftco-section ftco-no-pt ftc-no-pb">
+                            <img src="{% static 'img/17947.jpg'%}" alt="" width="530" height="650" style="float:right">
+                            <div class="container">
+                                <div class="row d-flex">
+                                  
+                                    <div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
+                                         
+                                    </div>
+                                    <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
+                              <h2 class="mb-4">Things That Matter In Your Career</h2>
+                                        <p>What do you think realizing money is everything?</p>
+                                        
+                                        <div class="row mt-5">
+                                            <div class="col-lg-6">
+                                                <div class="services-2 d-flex">
+                                                    <div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-security"></span></div>
+                                                    <div class="text pl-3">
+                                                        <h3>Identify Need</h3>
+                                                        <p>Do you really need five cars for you and your spouse in the driveway?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="services-2 d-flex">
+                                                    <div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-reading"></span></div>
+                                                    <div class="text pl-3">
+                                                        <h3>Impact</h3>
+                                                        <p>Do you want a job that makes people happy? One that solves big problems? Do you want a giant salary?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="services-2 d-flex">
+                                                    <div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-diploma"></span></div>
+                                                    <div class="text pl-3">
+                                                        <h3>Right Guidance</h3>
+                                                        <p>Every time you don't follow your inner guidance, you feel a loss of energy, loss of power, a sense of spiritual deadness.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="services-2 d-flex">
+                                                    <div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-education"></span></div>
+                                                    <div class="text pl-3">
+                                                        <h3>Instinct</h3>
+                                                        <p>Pay attention to which job descriptions spark your interest, and which do not.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="services-2 d-flex">
+                                                    <div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-jigsaw"></span></div>
+                                                    <div class="text pl-3">
+                                                        <h3>Environment</h3>
+                                                        <p>Begin by looking at the type of place you’d prefer to spend your working days. Would you like to join a huge corporation?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="services-2 d-flex">
+                                                    <div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-kids"></span></div>
+                                                    <div class="text pl-3">
+                                                        <h3>Career and Sports</h3>
+                                                        <p>Sports is one of the rewarding career options of the country with lots of job opportunities.</p>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trainer Table Schedule Section End -->
+
+    <!-- Team Section Begin -->
+    <section class="team-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Our Aspirations</h2>
+                        <p>They can really help you to acheive something big in life.</p>
+                    </div>
+                    <a href="#" class="primary-btn">View All <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="team-members">
+                <div class="row m-0">
+                    <div class="col-lg-4 order-lg-1 p-0">
+                        <div class="member-pic first">
+                            <img src="{% static 'img/elonmusk.jpg'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-2 p-0">
+                        <div class="member-text">
+                            <span></span>
+                            <h5>Elon Musk</h5>
+                            <p>"Failure is an option here. If things are not failing, you are not innovating enough."</p>
+                            <div class="member-social">
+                                <a href="#"><i class="ti-facebook"></i></a>
+                                <a href="#"><i class="ti-twitter-alt"></i></a>
+                                <a href="#"><i class="ti-pinterest"></i></a>
+                                <a href="#"><i class="ti-vimeo-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-3 p-0">
+                        <div class="member-pic second">
+                            <img src="{% static 'img/jackma.jpg'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-6 p-0">
+                        <div class="member-text second">
+                            <span></span>
+                            <h5>Jack Ma</h5>
+                            <p>"If you don’t give up, you still have a chance. Giving up is the greatest failure."</p>
+                            <div class="member-social">
+                                <a href="#"><i class="ti-facebook"></i></a>
+                                <a href="#"><i class="ti-twitter-alt"></i></a>
+                                <a href="#"><i class="ti-pinterest"></i></a>
+                                <a href="#"><i class="ti-vimeo-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-5 p-0">
+                        <div class="member-pic third">
+                            <img src="{% static 'img/download.jpg'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-4 p-0">
+                        <div class="member-text third">
+                          
+                            <h5>Abraham Lincoln</h5>
+                            <p>The best way to predict the future is to create it.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="ti-facebook"></i></a>
+                                <a href="#"><i class="ti-twitter-alt"></i></a>
+                                <a href="#"><i class="ti-pinterest"></i></a>
+                                <a href="#"><i class="ti-vimeo-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Latest News Section Begin -->
+    <section class="latest-news-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Latest News</h2>
+                        <p>A range of services adapted to your needs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="latest-items">
+                        <div class="latest-pic">
+                            <img src="{% static 'img/blog-1.jpg'%}" alt="">
+                        </div>
+                        <div class="latest-text">
+                            <div class="latest-tag">
+                                <div class="tag-clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    Dec 11, 2018
+                                </div>
+                                <div class="tag-comments">
+                                    <i class="fa fa-comments-o"></i>
+                                    6 Comments
+                                </div>
+                            </div>
+                            <h5><a href="blog-details.html">Odisha govt launches career portal for student </a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="latest-items">
+                        <div class="latest-pic">
+                            <img src="{% static 'img/blog-1.jpg'%}" alt="">
+                        </div>
+                        <div class="latest-text">
+                            <div class="latest-tag">
+                                <div class="tag-clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    Dec 19, 2018
+                                </div>
+                                <div class="tag-comments">
+                                    <i class="fa fa-comments-o"></i>
+                                    6 Comments
+                                </div>
+                            </div>
+                            <h5><a href="blog-details.html">Army organises career counselling session for youth in J&K's Ramban</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="latest-items">
+                        <div class="latest-pic">
+                            <img src="{% static 'img/blog-1.jpg'%}" alt="">
+                        </div>
+                        <div class="latest-text">
+                            <div class="latest-tag">
+                                <div class="tag-clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    Dec 23, 2018
+                                </div>
+                                <div class="tag-comments">
+                                    <i class="fa fa-comments-o"></i>
+                                    6 Comments
+                                </div>
+                            </div>
+                            <h5><a href="blog-details.html">Birsa Agriculture University postpones counselling session, suspends physical classes</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest News Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="map-location">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14039.530717403992!2d77.34859673190088!3d28.392611270207233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdcc28f34693d%3A0x671c8abfcd3febb7!2sSector%2082%2C%20Faridabad%2C%20Haryana%20121002!5e0!3m2!1sen!2sin!4v1620889552422!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" ></iframe>
+                        <div class="map-widget">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="map-address">
+                                <img src="img/map-location.jpg" alt="">
+                                <ul class="map-text">
+                                    <li><span>Address:</span> H no 1008 Florida Apartment Sec-82 Faridabad</li>
+                                    <li><span>Phone:</span> 8287724096</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-form set-bg" data-setbg="{% static 'img/4882066.jpg'%}">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <div class="section-title">
+                                    <h2>Feel Free To Connect</h2>
+                                    <p>Failure doesn't mean you are a failure it just means you haven't succeeded yet.</p>
+                                </div>
+                                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeFg23Ahpb0gT4S_gnBO9mHdwolNPNmLeDaQ8sp55hXb8VUoA/formResponse">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <input type="text" name="entry.22939761" placeholder="Name">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <input type="text" name="entry.313955571" placeholder="Email">
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <input type="text" name = "entry.573557244"placeholder="Subject">
+                                            <textarea name= "entry.1234944426" placeholder="Message"></textarea>
+                                            <button type="submit">Submit <i class="ti-angle-double-right"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="register">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>. Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div>
+                        <div class="footer-widget">
+                            <ul>
+                                <li>Privacy Policy</li>
+                                <li>Terms Of Service</li>
+                                <li>Careers</li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src= "{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src= "{% static 'js/bootstrap.min.js'  %}"></script>
+    <script src= "{% static 'js/jquery.magnific-popup.min.js'  %}"></script>
+    <script src= "{% static  'js/mixitup.min.js'  %}"></script>
+    <script src="{% static  'js/jquery.slicknav.js'  %}"></script>
+    <script src="{% static  'js/owl.carousel.min.js'  %}"></script>
+    <script src="{% static 'js/main.js' %}" ></script>
+</body>
+
+</html>

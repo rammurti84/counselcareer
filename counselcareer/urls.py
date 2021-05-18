@@ -32,9 +32,9 @@ urlpatterns = [
 
      path('index/',views.index,name='index'),
 
-   path('index/',views.index,name='index'),
+ 
      path('about/', views.about, name='about'),
-     path('',views.index,name='home'),
+  
   
   
 
@@ -44,5 +44,6 @@ urlpatterns = [
     path('gallery/',views.gallery,name='gallery'),
     
     path('blog/',views.blog,name='blog'),
+    path('blog/blog-details.html',views.blog,name='blog-details'),
     path('contact/',views.contact,name='contact'),
 ]

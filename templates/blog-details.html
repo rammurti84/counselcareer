@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% load static %}
 <html lang="zxx">
 
 <head>
@@ -14,13 +14,13 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href= "{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href= "{% static 'css/font-awesome.min.css' %}"  type="text/css">
+    <link rel="stylesheet" href= "{% static 'css/themify-icons.css' %}"  type="text/css">
+    <link rel="stylesheet" href= "{% static 'css/owl.carousel.min.css' %}"  type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}"  type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}"  type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"  type="text/css">
 </head>
 
 <body>
@@ -40,16 +40,17 @@
             <div class="nav-menu">
                 <nav class="mainmenu mobile-menu">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about-us.html">About</a></li>
-                        <li><a href="./schedule.html">Schedule</a></li>
-                        <li><a href="./gallery.html">Portfolio</a></li>
-                        <li class="active"><a href="./blog.html">Blog</a>
+                        
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="{% url 'schedule' %}">Schedule</a></li>
+                        <li><a href="{% url 'gallery' %}">Portfolio</a></li>
+                        <li ><a href="{% url 'blog' %}">Blog</a>
                             <ul class="dropdown">
                                 <li><a href="blog-details.html">Blog Details</a></li>
                             </ul>
                         </li>
-                        <li><a href="./contact.html">Contacts</a></li>
+                        <li><a href="{% url 'contact' %}">Contacts</a></li>
                     </ul>
                 </nav>
                 <div class="nav-right search-switch">
@@ -422,13 +423,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- Search model end -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src= "{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src= "{% static 'js/bootstrap.min.js'  %}"></script>
+    <script src= "{% static 'js/jquery.magnific-popup.min.js'  %}"></script>
+    <script src= "{% static  'js/mixitup.min.js'  %}"></script>
+    <script src="{% static  'js/jquery.slicknav.js'  %}"></script>
+    <script src="{% static  'js/owl.carousel.min.js'  %}"></script>
+    <script src="{% static 'js/main.js' %}" ></script>
 </body>
 
 </html>

@@ -40,13 +40,13 @@
             <div class="nav-menu">
                 <nav class="mainmenu mobile-menu">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about-us.html">About</a></li>
-                        <li><a href="./schedule.html">Schedule</a></li>
-                        <li><a href="./gallery.html">Portfolio</a></li>
-                        <li><a href="./blog.html">Blog</a>
+                        < <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="{% url 'schedule' %}">Schedule</a></li>
+                        <li><a href="{% url 'gallery' %}">Portfolio</a></li>
+                        <li ><a href="{% url 'blog' %}">Blog</a>
                             <ul class="dropdown">
-                                <li><a href="blog-details.html">Blog Details</a></li>
+                                <li><a href="{% url 'blog-details' %}">Blog Details</a></li>
                             </ul>
                         </li>
                         <li class="active"><a href="./contact.html">Contacts</a></li>

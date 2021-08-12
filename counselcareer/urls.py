@@ -34,6 +34,7 @@ urlpatterns = [
 
  
      path('about/', views.about, name='about'),
+     
   
   
   
@@ -46,4 +47,5 @@ urlpatterns = [
     path('blog/',views.blog,name='blog'),
     path('blog/blog-details.html',views.blog,name='blog-details'),
     path('contact/',views.contact,name='contact'),
+    path('contact/login',views.login,name='login'),
 ]
